@@ -60,7 +60,6 @@ public class Main {
     }
 
     private static Map<Moneda, Double> obtenerTasasDeCambio() throws IOException, InterruptedException, IllegalStateException {
-        // CORRECCIÓN: Usamos equalsIgnoreCase para evitar las advertencias de mayúsculas/minúsculas
         if (API_KEY.equalsIgnoreCase("TU_CLAVE_API_AQUI")) {
             throw new IllegalStateException("Por favor, reemplaza 'TU_CLAVE_API_AQUI' con una clave de API válida.");
         }
